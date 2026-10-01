@@ -1,11 +1,41 @@
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    text-decoration: none; 
+    text-align: center;
+}
+
+nav a:hover {
+    color: #cccccc; 
+}
+
 body {
-    background-color: black;
-    font-family: Georgia;
+    background-color: black;    
+}
+
+h1 {
+    color:blueviolet;
+    text-align: center;
+     font-size: 40px;
+     font-family: Georgia;
 }
 
 h2 {
-    color: purple;
+    color: blueviolet;
     text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Georgia;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-family: Georgia;
 }
 
 .card-container {
