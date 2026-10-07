@@ -28,7 +28,23 @@ h2 {
     color: blueviolet;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: Georgia;
+}
+
+h3 {
+    color: blueviolet;
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Georgia;
+}
+
+h4 {
+    color: blueviolet;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
     font-family: Georgia;
 }
 
@@ -48,4 +64,26 @@ p {
     margin: 10px;
     padding: 20px;
     border: 5px solid white;
+}
+.highlight {
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    padding: 4px 8px;
+    
+    /* 1. Center the box itself on the page */
+    display: block;
+    width: fit-content;
+    margin: 20px auto; 
+    
+    /* 2. Center the text inside the box */
+    text-align: center; 
+}
+
+/* Remove default browser margin from the text */
+.highlight p {
+    margin: 0; 
+}
+
+footer {
+    color: white;
 }
