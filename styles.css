@@ -17,6 +17,20 @@ body {
     background-color: black;    
 }
 
+.header-images {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally on the page */
+    align-items: center;     /* Aligns them vertically in the middle */
+    gap: 20px;  
+     transform: translateY(30px) scale(0.95);
+    animation: popUp 0.6s ease-out forwards;            
+}
+
+.header-images img {
+    max-width: 100%;
+    height: auto;
+}
+
 h1 {
     color:blueviolet;
     text-align: center;
@@ -57,6 +71,8 @@ p {
 .card-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .card {
@@ -64,7 +80,29 @@ p {
     margin: 10px;
     padding: 20px;
     border: 5px solid white;
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    animation: popUp 0.6s ease-out forwards;
 }
+
+/* Keyframes for the pop up effect */
+@keyframes popUp {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Stagger the appearance of each card slightly */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+
 .highlight {
     background-color: blueviolet;
     border: 2px solid blueviolet;
@@ -86,4 +124,31 @@ p {
 
 footer {
     color: white;
+}
+
+.service-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.service-btn:hover {
+    background-color: #5b17a1;
+}
+.card ul {
+    text-align: left;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.card ul li {
+    color: whitesmoke;
+    font-family: Georgia;
+    margin-bottom: 5px;
 }
